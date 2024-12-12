@@ -1,0 +1,831 @@
+We take our customers around the world through wine to expereinece places they may never visit
+Reds
+Gamay
+Glass Bottle 
+Light & Fruity/Smooth Tannins/Med Acidity
+9
+Beaujolais France
+Beaujolais (sm vineyard selection family owned)
+13
+48
+Pinotage
+Smoke & Spicey/Smooth Tannins/High Acidity
+48
+South Africa
+Man Family Wines
+8
+28
+127
+South Africa
+Van Loveren African Java
+9
+32
+Pinot Noir
+Light & Earthy/Light Tannins/Med to High Acidity
+10
+Burgundy France
+Burgundy (sm vineyard selection family owned)
+15
+56
+11
+Burgundy France
+Dom Frederic Esmonin
+24
+92
+129
+Lorie France
+Fournier Pere & Fils
+12
+44
+33
+Friuli Italy
+Avanti
+9
+32
+46
+New Zealand
+Wither Hills
+13
+48
+65
+Russian River USA
+Michael Pozzan
+15
+56
+123
+Chile
+Alto Tierruca
+8
+28
+Cabernet Franc
+Bold & Fruity/Firm Tannins/High Acidity
+8
+Lorie France
+Jean-Maurice Raffault 
+13
+48
+44
+La Pepie
+Dom Pepiere 
+14
+52
+Tempranillo
+Bold, Fruity/Smooth Tannins/Low to Med Acidity
+50
+Rioja Spain
+Covila
+13
+48
+51
+Ribera del Duero Spain Protos
+14
+52
+55
+Rioja Spain
+Alona
+14
+52
+1
+Tempranillo Blend
+Bold, Fruity/Smooth Tannins/Low to Med Acidity
+52
+Toro Spain
+Bodega Matsu
+13
+48
+63
+Campo de Borja
+Don Ramon
+10
+36
+64
+Spain
+Crucillion
+9
+32
+Sangiovese
+Bold, Fruity/Smooth/Med Tannins/High to Med Acidity
+35
+Tuscany Italy
+Brunello (sm vineyard selection family owned)
+29
+112
+138
+Tuscany  Italy
+Bolgheri Rosso (sm vineyard selection family owned)
+18
+68
+36
+Tuscany Italy
+Chianti Classico DOCG Famiglia Marcanelli
+14
+52
+37
+Tuscany  Italy
+Pagano Chianti DOCG
+10
+36
+42
+Puglia Italy
+Petraio
+9
+32
+Carmenere
+Dark Fruit/Firm Tannins/Low Acidity
+7
+ Chile
+The Social Grape
+9
+32
+Granacha
+Fruit & Spicy/Light Smooth Tannins/Low Acidity
+126
+Aragon Spain
+Xiloca
+11
+40
+Grenache Blends
+Fruit & Spicy/Light Smooth Tannins/Low Acidity
+12
+So Rhone France
+Kermit Lynch Cuvee
+10
+36
+13
+Ch neuf du Papa Fr
+Ch  Neuf du Papa (sm vineyard selection family owned)
+22
+84
+137
+Rhone Valley
+Jean-Luc Colombo Cotes du Rhone
+13
+48
+Barbera
+Light Red Fruits/Smooth Tannins/High Acidity
+25
+Piedmont Italy
+Alverdi
+13
+48
+2
+Merlot
+Bold & Fruity/Smooth Tannins/Low to Med Acidity
+6
+ Chile
+Santa Ema
+8
+28
+57
+Tuscany  Italy
+Sensi Collezione 
+9
+32
+Merlot Blend
+Bold & Fruity/Smooth Tannins/Low to Med Acidity
+38
+Veneto  Italy
+Cinquepassi
+13
+48
+Primitivo
+Dark Fruit/Light Smooth Tannins/Low Acidity
+43
+Puglia Italy
+Matane
+12
+44
+Montepulciano
+Fruity/Light Tannins/High Acidity
+40
+Abruzzo  Italy
+Fantini
+10
+36
+41
+Abruzzi  Italy
+Valori
+14
+52
+Corvina Blend
+Light & Fruity/Light Tannins/High Acidity
+30
+Veneto  Italy
+Ripasso (sm vineyard selection family owned)
+15
+56
+31
+Veneto  Italy
+Amarone (sm vineyard selection family owned)
+22
+84
+135
+Veneto  Italy
+Bertani Valpolicella Corvina
+11
+40
+Zinfandel
+Dark Fruit/Light Smooth Tannins/Low Acidity
+59
+Italy
+One True Zin
+9
+32
+Nebbiolo
+Bold & Fruity/Firm Tannins/High Acidity
+26
+Piedmont  Italy
+Casata Monticello Estates Nebbiolo D’Abla
+9
+32
+27
+Piedmont  Italy
+Patrizi Barbaresco
+13
+48
+28
+Piedmont  Italy
+Barolo (sm vineyard selection family owned)
+17
+64
+29
+Piedmont Italy
+Barolo (sm vineyard selection family owned)
+23
+88
+3
+Nero d’Avola Blend
+Dark & Fruity/Firm Tannins/Med to High Acidity
+136
+Sicily Italy
+Planeta Cerasuolo di Vittoria
+16
+60
+Malbec
+Dark Fruit/Smooth Tannins/Low Acidity
+2
+Argentina
+Finca El Origen Reserva
+9
+32
+3
+Argentina
+Benegas Estates
+12
+44
+Malbec Blend
+Dark Fruit/Smooth Tannins/Low Acidity
+15
+Cahors France
+Clos La Coutale
+13
+48
+62
+Anderson Vlly USA
+Yorkville High Rollr Red
+12
+44
+Shiraz
+Fruity/Med Tannins/Med Acidity
+5
+Barossa Valley
+Steeple Jack 
+10
+36
+Shiraz/Syrah Blend
+Fruity/Med Tannins/Med Acidity
+16
+Visan France
+Dom de la Bastide Cotes du Rhone
+10
+36
+49
+La Mancha Spain
+SPN Red Blend
+8
+28
+61
+Portugal 
+Herdado dos Templarlos
+13
+48
+Cabernet Sauvignon
+Bold & Fruity/Med Tannins/Med Acidity
+1
+Argentina
+Sensato Buho
+9
+32
+17
+Napa USA
+Mind and Body (low Calorie (90))
+9
+32
+19
+Margaux France
+Margaux (sm vineyard selection family owned)
+22
+84
+32
+Veneto  Italy
+Almadi
+10
+36
+34
+Napa USA
+Cloisonne
+19
+72
+39
+Tuscany Italy
+La Mozza
+13
+48
+47
+South Africa
+Rustenburg Estates
+16
+60
+4
+Cabernet Sauvignon (Cont)
+56
+Washington USA
+Duckhorn Canvasback
+19
+72
+60
+CA USA
+Bonanza
+11
+40
+66
+Napa USA
+Napa Cellars
+21
+80
+122
+Chile
+Alto Tierruca
+8
+28
+128
+So. Africa
+Van Loveren Coco 
+9
+32
+Cab & Merlot Blend
+Bold & Fruity/Smooth Tannins/Med Acidity
+14
+Bergerac France
+Ch Michel de Montaigne
+10
+36
+18
+Bordeaux France
+Chateau Laborde Cuvee Prestige
+14
+52
+20
+Pauillac France
+Pauillac (sm vineyard selection family owned)
+25
+96
+21
+St Julien France
+St. Julien (sm vineyard selection family owned)
+26
+100
+22
+St Estephe France
+St. Estephe (sm vineyard selection family owned)
+16
+60
+23
+St Emillion France
+St. Emillion (sm vineyard selection family owned)
+18
+68
+24
+Pomerol France
+Pomerol (sm vineyard selection family owned)
+18
+68
+54
+Bordeaux France
+Ch Laborde Prestige (aged in steel)
+11
+40
+67
+Napa USA
+Duckhorn Paraduxx
+21
+80
+58
+Mendocino Cry
+McNab Ridge 
+14
+52
+Tinto & Touring
+Dark Fruit/Firm Tannins/Med Acidity
+45
+Portugal 
+Quinta da Devesa Tinto
+13
+48
+Petit Verdot
+Dark Fruit/Firm Tannins/High Acidity
+4
+Argentina
+Proemio (Organic)
+16
+60
+Monastrell
+Dark & Fruity/Firm Tannins/High Acidity
+53
+Yecla  Spain
+Gusto
+11
+40
+18% Gratuity added on all parties of 6 or more
+5
+We take our customers around the world through wine to expereinece places they may never visit
+Whites
+Loureio/Padeiro blend
+Glass Bottle 
+Ocean Mineral/Light bodied/Med Acidity
+90
+Portugal
+Miguels Vinho Verde 
+9
+32
+ Pinot Grigio/Pinot Gris
+Dry/Light bodied/Med Acidity
+82
+Friuli Italy
+Vinacola Botter Avanti
+9
+32
+83
+Friuli Italy
+Di Lenardo Gossip  (Orange)
+13
+48
+121
+Friuli Italy
+Di Lenardo
+9
+32
+89
+Oregon USA
+Pike Road Pinot Gris
+10
+36
+Verdejo
+Med Dry/Full bodied/Med to High Acidity
+93
+Spain
+Cote de Hayas
+10
+36
+Verdejo Blend
+Med Dry/Full bodied/Med to High Acidity
+81
+Spain
+PradoRey Blanco
+12
+44
+Chenin Blanc
+Dry/Full bodied/High Acidity
+91
+South Africa
+Man Family Wines Free Run Steen
+9
+32
+92
+South Africa
+Reyneke Vinehugger White
+14
+52
+Friulano Blend
+Med Dry/Med bodied/Low to Med Acidity
+86
+Friuli Italy
+Bastianich Colli Orentali del Friuli 
+16
+60
+1
+Gruner Veltliner
+Dry, Crisp/Light bodied/High Acidity
+69
+Austria
+Hopler
+13
+48
+Pecorino
+Dry/Medium bodied/Med Acidity
+87
+Tuscany Italy
+Valori Abruzzo
+12
+44
+Pinot Noir
+dry-style/tropical and balanced/crisp acidity
+131
+Germany
+Blanc de Noir
+10
+36
+Sauvignon Blanc
+Dry, Crisp/Med bodied/Med to High Acidity
+70
+Chile
+William Fevre La Mison
+10
+36
+71
+Loire France
+Sancerre
+20
+76
+72
+Loire France
+Pouilly-Fume
+17
+64
+77
+Bordeaux France
+Chateau Laborde
+11
+40
+84
+Friuli Italy
+Di Lenardo
+8
+28
+88
+New Zealand
+Seven Terraces
+10
+36
+99
+Napa USA
+Mason Cellars
+15
+56
+124
+Chile
+WAPI
+9
+32
+144
+Loire France
+Fournier
+11
+40
+145
+Germany
+Schneider
+12
+44
+Chard Blends
+Dry/Full bodied/Low Acidity
+78
+Languedoc France Lauren Miquel Pere et Fils
+8
+28
+Chardonnay
+Dry, Full bodied/Low Acidity
+73
+Chablis France
+Chablis
+16
+60
+74
+Burgundy France
+Pouilly-Fuisse
+20
+76
+85
+Friuli Italy
+Di Lenardo Fathers Eyes
+9
+32
+94
+Oregon USA
+Chateau Bianca
+14
+52
+96
+Alexander Vl
+Cloisonne
+16
+60
+2
+100
+Sanoma USA
+Bravium
+14
+52
+133
+Burgundy France
+Macon Uchizy
+12
+44
+142
+Argentina
+Benegas Estates
+12
+44
+Viognier
+Dry/Med to Full bodied/Low Acidity
+76
+Yakima Vly
+Art Den Hoed   K
+13
+48
+Arneis
+Dry, Crisp/Full bodied/High Acidity
+101
+Piedmont Italy
+Cantine Giacomo Langhe Ascheri
+13
+48
+Alvarinho
+Citrus Off Dry/Med bodied/High Acidity
+143
+Portugal
+Quinta D’Amares
+13
+48
+Riesling
+Dry/Off Dry/Med Bodied/Med to High Acidity
+75
+Germany
+Save Water Drink Riesling (Non Alcoholic)
+10
+36
+97
+Germany
+Schneider Niersteiner Hipping Spaltete
+14
+52
+79
+Germany
+Paul Anheuser
+12
+44
+80
+Germany
+Georg Albrecht Schneider
+15
+56
+95
+Oregon USA
+Chateau Bianca
+14
+52
+120
+Germany
+My Karp Schreiber
+11
+40
+Moscato
+Sweet/Medium bodied/Low Acidity
+68
+Australia
+Angove Nine Vines
+8
+28
+Silvaner
+Fruity/Floral sweetness
+98
+Germany
+Dr. Heyden 
+10
+36
+3
+We take our customers around the world through wine to expereinece places they may never visit
+          Rose
+Pinot Noir
+Glass Bottle 
+Fruit and Mineral, slight tannins and med acidity
+107
+New Zealand
+Wither Hills
+9
+32
+108
+Oregon USA
+Chateau Bianca
+11
+40
+109
+Roussillon France
+Bila Haut
+12
+44
+Touriga Nacional Blend
+Tropical Fruits, slight tannins and low acidity
+110
+Portugal
+Quinta D’Amares
+10
+36
+125
+Portugal
+Miguels
+8
+28
+Syrah Blend
+Light and fruity,  slight tannins and med acidity 
+102
+Provence France
+MVY Cotes de Provence
+13
+48
+105
+Provence France
+Jean-Luc Colombo Rose de Cote Bleue
+10
+36
+106
+Sicily Italy
+Planeta Sicilia Rose
+13
+48
+141
+So Aafrica
+Goats do Roam
+8
+28
+Grenache & Consult Blend
+Fruity, crisp slight tannins and med acidity
+130
+Mediterranee France
+Peyrassol La Croix
+12
+44
+140
+Carcassonne FR
+Larque
+9
+32
+Cabernet Sauvignon
+Red fruits, med tannins and med acidity 
+103
+Bordeaux France
+Chateau Laborde Bordeaux Rose
+11
+40
+104
+No.Fork LI NY
+Bedell (Blend)
+10
+36
+Cabernet Franc
+Fruit, earthy with med tannins and high acidity 
+134
+Lorie
+Jean-Maurice Raffault  Chinon Rose
+12
+44
+1
+We take our customers around the world through wine to expereinece places they may never visit
+          Sparkling
+Glass Bottle 
+Chardonnay
+111 Champagne Fr
+Charles de Cazanove Brut tete de cuvee
+60
+112 Bordeaux Fr
+Chateau Laborde Royal Laborde Cremant
+40
+113 Lombardy Italy
+Agricolo Brandini Franciacorta Brut Alma Gran Cuvee
+60
+Prosecco 
+114 Veneto Italy
+Flor Prosecco Rose .187 size
+10
+115 Veneto Italy
+Bellino Prosecco .187 size
+11
+116 Veneto Italy
+Vandori
+40
+132 Veneto Italy
+Valdo Brut Rose
+27
+Moscato
+117 Veneto Italy
+Bacl Dolci Blonde Moscato
+24
+118 Piedmont Italy
+Agricola Brandini Moscato d’Asti
+34
+Cava
+119 Rioja Spain
+Marques de Caceres
+22
+1
+
