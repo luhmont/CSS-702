@@ -1,0 +1,15 @@
+Train a Named Entity Recognition (NER) model to distinguish menu items from descriptions
+
+Pull restuarant information from the internet like pictures and photos
+
+Show location and web information on these restuarants
+
+want to combine a NLP model with the recommendations, using streamlit as the medium for the chat.
+
+want to get the relevancy score of the extracted keywords from each menu to give more useful information.
+
+Every menu has similar but different formatting, making it more challenging to get item names and prices easily, maybe train a model to recognize
+them?
+
+intent classification system vs using gpt2 to generate intent
+
