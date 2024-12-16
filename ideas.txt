@@ -13,3 +13,17 @@ them?
 
 intent classification system vs using gpt2 to generate intent
 
+#pip install streamlit
+#pip install pysimplegui NOT USED
+#pip install --upgrade pymupdf
+#pip install -U sentence-transformers
+#python -m spacy download en_core_web_sm
+#pip install transformers torch spacy
+
+
+
+#there may be some dependency issues when trying to install spacy since there are issues with numpy 2.x and up, these lines seemed to solve them
+#pip uninstall numpy
+#pip install numpy==1.24.3
+#pip install --upgrade pip
+#pip install --upgrade contourpy numba pywavelets streamlit

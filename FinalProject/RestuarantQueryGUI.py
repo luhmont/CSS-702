@@ -1,34 +1,30 @@
-#pip install streamlit
-#pip install pysimplegui NOT USED
-#pip install --upgrade pymupdf
-#pip install -U sentence-transformers
-#python -m spacy download en_core_web_sm
-#pip install transformers torch spacy
-
-#there may be some dependency issues when trying to install spacy since there are issues with numpy 2.x and up, these lines seemed to solve them
-#pip uninstall numpy
-#pip install numpy==1.24.3
-#pip install --upgrade pip
-#pip install --upgrade contourpy numba pywavelets streamlit
-
-
-       
+#pip install streamlit pandas pymupdf sentence-transformers transformers spacy  
+#pip install transformers torch     
 
 
 import streamlit as st
-import pandas as pd #for storing restuarant data
+import pandas as pd #for storing restaurant data
 import pymupdf #for reading pdf files
 from sentence_transformers import SentenceTransformer #for getting vectors from text
 from pathlib import Path #for reading all pdfs in the folder
-from transformers import GPT2Tokenizer, GPT2Model #for tokenizing imput
+from transformers import GPT2Tokenizer, GPT2LMHeadModel #for tokenizing imput
 import spacy
 import pandas as pd
+from transformers import pipeline
+import torch
+from string import punctuation
+from sklearn.metrics.pairwise import cosine_similarity
 
 
+sentencetransformermodel = SentenceTransformer("all-MiniLM-L6-v2")
+restaurantdf = pd.DataFrame(columns=["Restaurant Name", "Keywords", "Embeddings"])
+nlp = spacy.load("en_core_web_sm")
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
-restuarantdf = pd.DataFrame("Restuarant Name", "Keywords", "Embeddings")
-
+def load_gpt2():
+    language_model_name = "gpt2"
+    tokenizer = GPT2Tokenizer.from_pretrained(language_model_name)
+    nlpmodel = GPT2LMHeadModel.from_pretrained(language_model_name)
+    return tokenizer, nlpmodel
 
 def pdf_reader(file_path): #method for reading pdfs
     #open file
@@ -45,49 +41,135 @@ def pdf_reader(file_path): #method for reading pdfs
     file.close()
     return out
          
-def get_restuarantnames():
+def get_restaurantnames():
     pdf_search = Path(str(Path.cwd())).rglob("*.pdf") #gets all the pdf files in the current directory
     pdf_files = [str(file.absolute()) for file in pdf_search] #iterates over all the pdf files in the current directory and adds them to an array.
     return pdf_files
 
-def get_restuaranttext():
+def get_restauranttext():
     pdf_search = Path(str(Path.cwd())).rglob("*.pdf") #gets all the pdf files in the current directory
     pdf_files = [str(file.absolute()) for file in pdf_search] #iterates over all the pdf files in the current directory and adds them to an array.
     pdf_filecontent = [pdf_reader(file) for file in pdf_files] #take the file names and extract the text content from them.
     return pdf_filecontent
 
-def restuarant_datapull(text): #uses spaCy to extract restuarant keywords, and add the title, keywords, and embeddings to a data frame.
-    
-    return
+def restaurant_datapull(text): #uses spaCy to extract Restaurant keywords, and add the title, keywords, and embeddings to a data frame.
+    result = []
+    pos_tag = ['PROPN', 'ADJ', 'NOUN'] #three labels for the types of extracted words
+    doc = nlp(text.lower()) #lowercase all words
+    for token in doc:
+        if(token.text in nlp.Defaults.stop_words or token.text in punctuation): #if word is in the stop words or is punctuation move on
+            continue
+        if(token.pos_ in pos_tag): #if not add to keywords
+            result.append(token.text)
+    return result
 
 def get_embeddings(text):
-    embeddings = model.encode(text) #get embeddings of the text passed in the parameter
+    if isinstance(text, list):
+        text = " ".join(text)
+    embeddings = sentencetransformermodel.encode(text) #get embeddings of the text passed in the parameter
     return embeddings
     
-#st.write("""# Restuarant Query Bot https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps
+#st.write("""# Restaurant Query Bot https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps
 #Hello *world!*""")
+
+def get_Restaurant_info():
+    restaurantdf
+    restaurant_titles = get_restaurantnames()
+    restaurant_texts = get_restauranttext()
+    
+    for name, text in zip(restaurant_titles, restaurant_texts):
+        keywords = restaurant_datapull(text)
+        embeddings = get_embeddings(keywords)
+        restaurantdf.loc[len(restaurantdf)] = [name, keywords, embeddings]
+    return restaurantdf
+
+def find_best_match(prompt_embedding, restaurant_df):
+    similarities = []
+    for idx, embedding in enumerate(restaurant_df["Embeddings"]):
+        similarity = cosine_similarity(
+            [prompt_embedding], [embedding]  # Compare embeddings
+        )[0][0]
+        similarities.append((idx, similarity))
+    
+    # Sort restaurants by similarity (highest first)
+    similarities.sort(key=lambda x: x[1], reverse=True)
+    return similarities[0]  # Return the best match
+
+def generate_response(prompt, best_restaurant):
+    restaurant_name = best_restaurant['Restaurant Name']
+    keywords = ", ".join(best_restaurant['Keywords'])
+    response = (
+        f"Here is my recommendation: '{restaurant_name}'. "
+        f"It is popular for {keywords}. Enjoy your meal!"
+    )
+    return response
 
 
 def main():
     
+    get_Restaurant_info()
     
-    
-    st.title("Restuarant Query Bot") #page title
+    st.title("Restaurant Query Bot") #page title
     with st.chat_message("assistant"): #gives name to bot and writes welcome message
-        st.write("Hello, I'm your restuarant assistant, how can I help you?")
+        st.write("Hello, I'm your restaurant assistant, how can I help you?")
         
-    if "messages" not in st.session_state: #if no messages have been sent then initialize chat history
-        st.session_state.messages = [] #variable for chat history
+    tokenizer, model = load_gpt2() #chat history initialization
+    
+    
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
         
-    for message in st.session_state.messages: #loop that iterates through the chat history to display the history in the message container.
+    for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
-    
-    if prompt := st.chat_input("Say something"):
-        st.chat_message("user").markdown(prompt) #display message in chat message container
-        st.session_state.messages.append({"role":"user", "content": prompt}) #add message to chat history
+            
+    if prompt := st.chat_input("Request a Restaurant"):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+            
+            # Display assistant response in chat message container
         
-        response = f"{prompt}"
+        if restaurantdf.empty:
+            with st.chat_message("assistant"):
+                st.markdown("Sorry, no restaurant data is available.")
+                st.session_state.messages.append({"role": "assistant", "content": "Sorry, no restaurant data is available."})
+            return
+
+        prompt_keywordembeddings = get_embeddings(restaurant_datapull(prompt)) #get the vector of the keywords from the user's input
+        best_match = find_best_match(prompt_keywordembeddings, restaurantdf)
+        
+        if not best_match:  # No match found
+            with st.chat_message("assistant"):
+                st.markdown("Sorry, no matching restaurants were found.")
+                st.session_state.messages.append({"role": "assistant", "content": "Sorry, no matching restaurants were found."})
+            return
+        
+        best_match_idx, _ = find_best_match(prompt_keywordembeddings, restaurantdf) #find best vector match for prompt using cosine similarity
+        best_restaurant = restaurantdf.iloc[best_match_idx]
+
+        response = generate_response(prompt, best_restaurant)
+        
+        '''gpt2_input = f"User asked about {prompt}. Recommend: {best_restaurant['Restaurant Name']} with keywords: {best_restaurant['Keywords']}." #have gpt return response
+        input_ids = tokenizer.encode(gpt2_input, return_tensors="pt")
+        
+        if input_ids.size(1) > 1024:
+            input_ids = input_ids[:, :1024]
+            
+        attention_mask = torch.ones_like(input_ids)
+        pad_token_id = tokenizer.eos_token_id
+        output_ids = model.generate(
+                        input_ids,
+                        attention_mask=attention_mask,
+                        pad_token_id=pad_token_id,
+                        do_sample=True,
+                        temperature=0.9,
+                        max_new_tokens=100,
+                    )
+        attention_mask = torch.ones_like(input_ids)
+        pad_token_id = tokenizer.eos_token_id
+        response = tokenizer.decode(output_ids[0], skip_special_tokens=True)'''
+            
         with st.chat_message("assistant"):
             st.markdown(response)
             st.session_state.messages.append({"role": "assistant", "content": response})
